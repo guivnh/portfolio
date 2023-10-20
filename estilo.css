@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font: bold 18px "Open Sans", Arial, sans-serif;
+  background: black;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh; /* Define a altura mínima do container como 150% da altura da viewport (tela). */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.text span {
+  font-size: 60px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 600; /* Define o peso no negrito da fonte. */
+  color: #fff;
+  animation: zoomup 4s ease infinite; /* Aplica uma animação chamada 'zoomup' com duração de 4 segundos e repetição infinita. */
+  animation-delay: calc(100ms * var(--i)); /* Define um atraso de animação baseado em uma variável --i, multiplicando 100ms. */
+}
+
+.dot {
+  display: block; /* Define o elemento com a classe .dot como um bloco. */
+}
+
+@keyframes zoomup {
+  0%,
+  100% {
+    color: red;
+    filter: blur(0.5px); /* Aplica desfoque ao texto. */
+    text-shadow: 0 0 10px red, 0 0 20px white, 0 0 30px white,
+      0 0 40px white, 0 0 50px red, 0 0 60px red; /* Adiciona sombras ao texto em várias distâncias e cores. */
+  }
+
+  50% {
+    filter: blur(0); /* Remove o desfoque do texto no ponto médio da animação. */
+    color: #fff; /* Define a cor do texto como branco no ponto médio da animação. */
+    text-shadow: none; /* Remove qualquer sombra do texto. */
+  }
+}
+
+header {
+  position: fixed; /* Fixa o cabeçalho no topo da página. */
+  top: 0px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 2; /* Certifica-se de que o cabeçalho esteja acima do conteúdo. */
+}
+
+main {
+  padding-top: 100px; /* Espaço para o cabeçalho fixo. */
+  margin: 0 auto;
+  max-width: 800px; /* Largura máxima do conteúdo principal. */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove os marcadores de lista padrão. */
+  display: flex; /* Exibe os itens da lista na horizontal. */
+  justify-content: center; /* Centraliza os itens da lista na horizontal. */
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-transform: uppercase; /* Converte o texto para maiúsculas. */
+  text-decoration: none; /* Remove a formatação de sublinhado dos links. */
+  letter-spacing: 0.2em;
+  margin: 0 10px;
+  display: inline-block; /* Exibe os links de navegação como blocos em linha. */
+  position: relative;
+}
+
+a {
+  /* Regras que se aplicam a todos os links (sem necessidade de duplicação). */
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em; /* Adiciona espaço entre as letras. */
+  display: inline-block;
+  padding: 0px 30px;
+  position: relative;
+}
+
+a:after {
+  bottom: 25px;
+  content: "";
+  height: 10px;
+  left: 0%;
+  position: absolute;
+  background: red;
+  transition: width 0.1s ease 0s, left 0.1s ease 0s; /* Define transições suaves para animar as propriedades width e left do pseudo-elemento. */
+  width: 10px;
+}
+
+a:hover:after {
+  width: 40%;
+  left: 20px;
+}
+
+section {
+  color: white;
+  font: bold 22px "Open Sans", Arial, sans-serif;
+  text-shadow: red 3px 0 8px; /* Adiciona uma sombra ao texto. */
+  height: 450px;
+  border-radius: 20px;
+  border: 3px solid red;
+  margin: 160px 200px; /* Centraliza na horizontal */
+  padding-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #800000;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+label {
+    display: block; /* Exibe os rótulos dos campos como blocos (um embaixo do outro). */
+    margin-top: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000; 
+    color: #fff;
+    border: 2px solid #ff0000; /* Adiciona uma borda vermelha aos campos de entrada */
+    border-radius: 5px; /* Adiciona cantos arredondados aos campos de entrada. */
+}
+
+textarea {
+    resize: none; /* Não deixa alterar o tamanho da caixa de texto */
+}
+
+input[type="submit"] {
+    background-color: #000; /* Cor de fundo do botão (preto) */
+    color: #fff; /* Cor do texto no botão (branco) */
+    border: 2px solid #ff0000; /* Borda vermelha do botão */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff0000; /* Cor de fundo (vermelho) ao passar o mouse. */
+    color: #fff; /* Cor do texto (branco) ao passar o mouse. */
+}

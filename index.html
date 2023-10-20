@@ -1,0 +1,83 @@
+<header>
+<!-- A tag <link> é usada para vincular uma folha de estilo externa (CSS) ao documento HTML. -->  
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <h1>Portfolio de Guilherme Vanhoni</h1>
+  <!-- A tag <nav> é usada para criar um menu de navegação. -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container" id="inicio">
+  <div class="text">
+<!-- As variáveis '--i' são usadas para contagem da animação na tag <animation-delay> dentro do css. -->    
+    <span style="--i:1">B</span>
+    <span style="--i:2">e</span>
+    <span style="--i:3">m</span>
+    <span style="--i:4"> </span>
+    <span style="--i:5">V</span>
+    <span style="--i:6">i</span>
+    <span style="--i:7">n</span>
+    <span style="--i:8">d</span>
+    <span style="--i:9">o</span>
+    <span style="--i:10">!</span>
+  </div>
+</div>
+<!-- A tag <section> é usada para dividir o conteúdo da página em seções distintas. -->
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>Sou formado em comunicação, com experiência intermediária em design gráfico, diagramação e um interesse crescente na criação 3D. Atualmente, estou matriculado em um curso de graduação em Análise e Desenvolvimento de Sistemas, com o propósito de explorar novos horizontes e adquirir competências adicionais na área de Tecnologia da Informação (TI).
+  <p>
+    A formação inicial em comunicação proporcionou uma base sólida em comunicação visual, design gráfico e diagramação, habilidades que podem ser aplicadas em diversas áreas. Além disso, o interesse em criação 3D agrega uma capacidade de trabalhar em projetos tridimensionais e explorar novas possibilidades criativas.</p>
+  <p>
+    Ingressei na graduação em Análise e Desenvolvimento de Sistemas com desejo de adquirir habilidades técnicas na área de TI, uma área em constante crescimento e transformação. Essa decisão reflete minha busca por novos desafios e o desejo de aplicar criatividade em soluções tecnológicas e inovadoras.</p>
+  <p>Estou preparado para explorar oportunidades profissionais em um mundo cada vez mais digital e tecnológico.</p>
+
+</section>
+
+<section id="formacao">
+  <h2>Formação Acadêmica</h2>
+  <ul>
+    <li><strong>Comunicação com foco em Produção Editorial e Multimídia:</strong> Minha base educacional inclui um bacharelado em Comunicação e Multimídia, onde adquiri sólidos conhecimentos em design gráfico, produção editorial e criação de conteúdo multimídia. Durante esse período, meu foco era a comunicação visual e o design gráfico, permitindo-me desenvolver habilidades em criação de materiais promocionais atraentes e eficazes.</li>
+    <p>
+      <li><strong>Tecnologia em Análise e Desenvolvimento de Sistemas (Em andamento):</strong> Atualmente, estou no 2º período do mesmo. Esta formação acadêmica tem como foco central a preparação de profissionais para compreender, projetar, desenvolver e gerenciar sistemas de informação, software e soluções tecnológicas.
+
+        Ao longo do curso, estou adquirindo conhecimentos profundos em programação, engenharia de software, segurança da informação, gestão de projetos, e banco de dados. Essa sólida formação técnica é fundamental para compreender os princípios que regem o desenvolvimento de sistemas e aplicações de software, desde concepção até implantação e manutenção.</li>
+  </ul>
+  </p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <p>Todo meu portfolio relacionado a desenvolvimento está no meu repositório do GitHub. Acesse pelo link:
+<!-- A tag <target> com o valor _blank serve para abrir um link em outra janela. -->    
+  <p><a href="https://github.com/guivnh" target="_blank">Perfil no GitHub</a></p><p>Ou, se preferir, copie e cole o link: "https://github.com/guivnh" para me encontrar!</p>
+</p>
+</section>
+
+<section id="contato">
+  <h2>Entre em Contato! (Formulário em Construção)</h2>
+  <p>
+<!-- A tag <form> cria um formulário. -->    
+    <form action="processar_contato.php" method="post">
+<!-- A tag <label> é usado para criar rótulos legíveis para campos de entrada. -->      
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label>
+<!-- A tag <input> é um campo de entrada de texto. "type" especifica o tipo (neste caso, texto), "id" e "name" são identificadores. -->
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+<!-- O botão "Enviar" do formulário. -->
+        <input type="submit" value="Enviar">
+    </form></p>
+</section>
+<!-- A tag <script> incorpora um arquivo JavaScript externo para adicionar funcionalidades à página. -->
+<script src="script.js"></script>
