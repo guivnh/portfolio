@@ -2,7 +2,6 @@ body {
   margin: 0;
   font: bold 18px "Open Sans", Arial, sans-serif;
   background: black;
-  overflow: hidden;
 }
 
 .container {
@@ -115,10 +114,9 @@ section {
   color: white;
   font: bold 22px "Open Sans", Arial, sans-serif;
   text-shadow: red 3px 0 8px; /* Adiciona uma sombra ao texto. */
-  height: 450px;
   border-radius: 20px;
   border: 3px solid red;
-  margin: 160px 200px; /* Centraliza na horizontal */
+  margin: 550px 200px; /* Centraliza na horizontal */
   padding-top: 0;
   padding-left: 40px;
   padding-right: 40px;
